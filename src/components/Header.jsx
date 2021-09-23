@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Logo from '../assets/logo.webp'
 
 function Header() {
     return (
         <Section>
             <Link to="/">
-                <img src="../assets/logo.webp" alt="Betway" />
+                <img src={Logo} alt="Betway" height="25" />
             </Link>
             <div>
                 <button>Login</button>

@@ -34,8 +34,17 @@ const Navigation = styled.nav`
         list-style: none;
         display: flex;
         align-items: center;
-        height: 40px;
         justify-content: space-between;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px 20px;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-bottom: 3px solid #00a826;
+        }
     }
 
     a {

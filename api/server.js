@@ -18,7 +18,17 @@ app.get('/api/getAssets', (req, res) => {
     }
   
   res.json(assets);
-  console.log('sent assets');
+})
+
+//banner
+app.get('/api/getBanner', (req, res) => {
+  const banner = {
+      topText: "Sports new customer offer",
+      offer: "Get up to £10 in Free Bets",
+      cta: "Join now"
+    }
+    
+  res.json(banner);
 })
 
 app.listen(8000, () => {
